@@ -1,0 +1,197 @@
+@config "../tailwind.config.ts";
+@import "tailwindcss";
+
+/* Custom container utility to match v3 behavior */
+@utility container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+  @media (min-width: theme(screens.sm)) {
+    max-width: 640px;
+  }
+  
+  @media (min-width: theme(screens.md)) {
+    max-width: 768px;
+  }
+  
+  @media (min-width: theme(screens.lg)) {
+    max-width: 1024px;
+  }
+  
+  @media (min-width: theme(screens.xl)) {
+    max-width: 1280px;
+  }
+  
+  @media (min-width: theme(screens.2xl)) {
+    max-width: 1400px;
+  }
+}
+
+/* Ensure max-w-6xl class continues to work as expected in v4 */
+@layer utilities {
+  .max-w-6xl {
+    max-width: 72rem; /* 1152px, same as Tailwind v3's max-w-6xl */
+  }
+}
+
+/* Default (Terminal) Theme CSS Variables */
+:root {
+  --background: 222 83% 4%; /* #0a0a0a - terminal.background */
+  --foreground: 0 0% 97%; /* #f8f8f8 - terminal.foreground */
+  --card: 222 83% 4%; /* terminal.background */
+  --card-foreground: 0 0% 97%; /* terminal.foreground */
+  --popover: 222 83% 4%;
+  --popover-foreground: 0 0% 97%;
+  --primary: 267 90% 58%; /* #8b5cf6 - terminal.accent.DEFAULT */
+  --primary-foreground: 0 0% 97%;
+  --secondary: 217 33% 17%; /* A dark gray, can be adjusted */
+  --secondary-foreground: 0 0% 97%;
+  --muted: 0 0% 42%; /* #6c6c6c - terminal.muted */
+  --muted-foreground: 0 0% 70%; /* Lighter muted text for terminal */
+  --accent: 267 90% 58%; /* terminal.accent.DEFAULT */
+  --accent-foreground: 0 0% 97%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 97%;
+  --border: 267 90% 58% / 0.3; /* terminal.accent.DEFAULT with alpha */
+  --input: 267 90% 58% / 0.2; /* terminal.accent.DEFAULT with alpha */
+  --ring: 267 90% 58%; /* terminal.accent.DEFAULT */
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    border-color: hsl(var(--border)); /* Explicit border color for v4 compatibility */
+  }
+  
+  /* Ensure all border utility classes have a default color */
+  .border, .border-0, .border-2, .border-4, .border-8, 
+  .border-x, .border-y, .border-t, .border-r, .border-b, .border-l,
+  .border-x-0, .border-y-0, .border-t-0, .border-r-0, .border-b-0, .border-l-0,
+  .border-x-2, .border-y-2, .border-t-2, .border-r-2, .border-b-2, .border-l-2,
+  .border-x-4, .border-y-4, .border-t-4, .border-r-4, .border-b-4, .border-l-4,
+  .border-x-8, .border-y-8, .border-t-8, .border-r-8, .border-b-8, .border-l-8 {
+    border-color: hsl(var(--border));
+  }
+  
+  body {
+    @apply bg-background text-foreground font-mono; /* Default to terminal font */
+  }
+
+  /* Professional Theme Overrides */
+  .professional-theme {
+    --professional-slate-900-hsl: 222 47% 8%; /* #111827 */
+    --professional-slate-800-hsl: 222 47% 11%; /* #1e293b */
+    --professional-slate-700-hsl: 215 28% 17%; /* #334155 */
+
+    --background: var(--professional-slate-900-hsl); /* Darker base for professional theme */
+    --foreground: 220 13% 91%; /* #e2e8f0 - professional.slate-200 */
+
+    --card: var(--professional-slate-800-hsl); /* #1e293b - Darker card background */
+    --card-foreground: 220 13% 91%;
+
+    --popover: var(--professional-slate-700-hsl);
+    --popover-foreground: 220 13% 91%;
+
+    --primary: 239 87% 67%; /* #6366f1 - professional.indigo-500 */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 215 28% 25%; /* #475569 - professional.slate-600 */
+    --secondary-foreground: 220 13% 91%;
+
+    --muted: 215 28% 25%;
+    --muted-foreground: 215 19% 50%; /* #94a3b8 - professional.slate-400 */
+
+    --accent: 260 89% 65%; /* #8b5cf6 - professional.purple-500 */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 28% 22%;
+    --input: 215 28% 22%;
+    --ring: 239 87% 67%;
+  }
+
+  .professional-theme body,
+  .professional-theme {
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  /* Explicit border color for professional theme */
+  .professional-theme * {
+    border-color: hsl(var(--border));
+  }
+
+  .professional-theme .professional-text-gradient {
+    @apply bg-gradient-to-r from-professional-indigo-500 via-professional-purple-500 to-professional-fuchsia-500 bg-clip-text text-transparent;
+  }
+}
+
+@layer components {
+  .terminal-window {
+    @apply bg-terminal-background border border-terminal-accent rounded-md overflow-hidden shadow-lg;
+  }
+  .terminal-header {
+    @apply bg-gray-800 px-4 py-2 flex items-center;
+  }
+  .terminal-body {
+    @apply p-4 font-mono overflow-visible;
+  }
+  .terminal-prompt {
+    @apply text-terminal-accent font-mono;
+  }
+  .terminal-command {
+    @apply text-terminal-foreground font-mono;
+  }
+  .terminal-output {
+    @apply text-terminal-foreground mt-2 font-mono;
+  }
+  .terminal-command-line .cursor {
+    height: 1.2em;
+    vertical-align: text-bottom;
+    position: relative;
+    top: 2px;
+  }
+  .cursor {
+    @apply inline-block w-2 bg-terminal-accent animate-blink;
+    height: 1.2em;
+    vertical-align: middle;
+    margin-bottom: 0;
+    position: relative;
+    top: 1px;
+  }
+
+  /* Special cursor adjustment for ASCII art */
+  .whitespace-pre .cursor {
+    vertical-align: middle;
+    height: 1.1em;
+    margin-bottom: 0;
+  }
+
+  /* Force strict line height control for ASCII art on mobile */
+  @media (max-width: 640px) {
+    .inline-block.leading-\[0\.6\] {
+      line-height: 0.6 !important;
+    }
+  }
+
+  .matrix-background {
+    @apply fixed top-0 left-0 w-full h-full pointer-events-none opacity-20; /* Increased opacity from 10 to 20 */
+    z-index: -1; /* Enhanced z-index for better mobile layering */
+  }
+
+  /* Mobile-specific matrix background optimizations */
+  @media (max-width: 767px) {
+    .matrix-background {
+      opacity: 0.3; /* Slightly higher opacity on mobile for better visibility */
+    }
+  }
+
+  .professional-theme .professional-card {
+    @apply bg-professional-slate-800/90 text-card-foreground border border-border rounded-lg shadow-lg;
+  }
+}
