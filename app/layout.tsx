@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     email: false,
     telephone: false,
   },
-  metadataBase: new URL("https://devinops.com"),
+  metadataBase: new URL("https://devinops.me"),
   alternates: {
     canonical: "/",
   },
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DevinOps - Devin Singh | Full-Stack Engineer & DevOps Specialist",
     description: "Devin Singh - 10+ years building, deploying, and scaling digital solutions. Portfolio showcasing expertise in full-stack development and DevOps.",
-    url: "https://devinops.com",
+    url: "https://devinops.me",
     siteName: "DevinOps - Devin Singh's Portfolio",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://devinops.com/og-image.jpg", // Create this image for social sharing
+        url: "https://devinops.me/og-image.jpg", // Create this image for social sharing
         width: 1200,
         height: 630,
         alt: "Devin Singh - Full-Stack Engineer & DevOps Specialist",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DevinOps - Devin Singh | Full-Stack Engineer & DevOps Specialist",
     description: "Devin Singh - 10+ years building, deploying, and scaling digital solutions. Portfolio showcasing expertise in full-stack development and DevOps.",
-    images: ["https://devinops.com/og-image.jpg"],
+    images: ["https://devinops.me/og-image.jpg"],
   },
   icons: {
     icon: [
@@ -127,8 +127,8 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Devin Singh",
-            "url": "https://devinops.com",
-            "image": "https://devinops.com/profile-image.jpg",
+            "url": "https://devinops.me",
+            "image": "https://devinops.me/profile-image.jpg",
             "jobTitle": "Full-Stack Engineer & DevOps Specialist",
             "worksFor": {
               "@type": "Organization",
@@ -149,11 +149,11 @@ export default function RootLayout({
               "@type": "ProfilePage",
               "mainEntity": {
                 "@type": "Person",
-                "@id": "https://devinops.com/#devin-singh",
+                "@id": "https://devinops.me/#devin-singh",
                 "name": "Devin Singh",
                 "jobTitle": "Full-Stack Engineer & DevOps Specialist",
                 "description": "Software engineer with 10+ years of experience in full-stack development and DevOps, specializing in cloud architecture and scalable solutions.",
-                "url": "https://devinops.com",
+                "url": "https://devinops.me",
                 "sameAs": [
                   "https://linkedin.com/in/devin",
                   "https://github.com/devin"
@@ -188,38 +188,38 @@ export default function RootLayout({
               "mainContentOfPage": {
                 "@type": "WebPageElement",
                 "isPartOf": {
-                  "@id": "https://devinops.com/#devin-singh"
+                  "@id": "https://devinops.me/#devin-singh"
                 },
                 "hasPart": [
                   {
                     "@type": "WebPageElement",
                     "name": "About",
                     "description": "About Devin Singh, Full-Stack Engineer and DevOps Specialist",
-                    "url": "https://devinops.com/#about"
+                    "url": "https://devinops.me/#about"
                   },
                   {
                     "@type": "WebPageElement",
                     "name": "Skills",
                     "description": "Technical skills of Devin Singh including frontend, backend, DevOps, and cloud technologies",
-                    "url": "https://devinops.com/#skills"
+                    "url": "https://devinops.me/#skills"
                   },
                   {
                     "@type": "WebPageElement",
                     "name": "Projects",
                     "description": "Software engineering projects by Devin Singh showcasing full-stack and DevOps expertise",
-                    "url": "https://devinops.com/#projects"
+                    "url": "https://devinops.me/#projects"
                   },
                   {
                     "@type": "WebPageElement",
                     "name": "Resume",
                     "description": "Professional resume of Devin Singh with work experience and qualifications",
-                    "url": "https://devinops.com/#resume"
+                    "url": "https://devinops.me/#resume"
                   },
                   {
                     "@type": "WebPageElement",
                     "name": "Contact",
                     "description": "Contact information for Devin Singh",
-                    "url": "https://devinops.com/#contact"
+                    "url": "https://devinops.me/#contact"
                   }
                 ]
               }

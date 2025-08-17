@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { ViewModeToggle, useViewMode } from "./view-mode-toggle"
 import { cn } from "@/lib/utils"
 import { Terminal, Menu, X, Briefcase, UserCircle, MessageSquare, FileText, Settings, Github } from "lucide-react" // Added Github icon
@@ -98,26 +99,15 @@ export function Header() {
       <div className={mode === "terminal" ? topAccentLineTerminal : topAccentLineProfessional}></div>
 
       <div className="max-w-7xl w-full mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group" aria-label="DevinOps - Devin Singh's Software Engineering Portfolio">
-          <Terminal
-            className={cn(
-              "h-7 w-7 transition-colors duration-300",
-              mode === "terminal"
-                ? "text-terminal-accent"
-                : "text-professional-purple-500 group-hover:text-professional-indigo-500",
-            )}
-            aria-hidden="true"
+        <Link href="/" className="flex items-center group" aria-label="DevinOps - Devin Singh's Software Engineering Portfolio">
+          <Image
+            src="/DevinOps-logo.png"
+            alt="DevinOps Logo"
+            width={120}
+            height={40}
+            className="h-10 w-auto transition-opacity duration-300 group-hover:opacity-80"
+            priority
           />
-          <span
-            className={cn(
-              "text-xl font-bold transition-colors duration-300 font-mono", // Applied font-mono here
-              mode === "terminal"
-                ? "text-terminal-accent"
-                : "text-professional-slate-200 group-hover:professional-text-gradient", // Removed font-sans
-            )}
-          >
-            DevinOps
-          </span>
         </Link>
 
         {/* Desktop Navigation */}

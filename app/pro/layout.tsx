@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Professional Portfolio - Devin Singh | Full-Stack Engineer & DevOps Specialist",
     description: "Professional portfolio of Devin Singh - Expert in full-stack development, DevOps, and cloud architecture with 10+ years of experience.",
-    url: "https://devinops.com/pro",
+    url: "https://devinops.me/pro",
     siteName: "DevinOps - Devin Singh's Professional Portfolio",
     locale: "en_US",
     type: "profile",
     images: [
       {
-        url: "https://devinops.com/og-image-professional.jpg",
+        url: "https://devinops.me/og-image-professional.jpg",
         width: 1200,
         height: 630,
         alt: "Devin Singh - Professional Portfolio - Full-Stack Engineer & DevOps Specialist",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Professional Portfolio - Devin Singh | Full-Stack Engineer & DevOps Specialist",
     description: "Professional portfolio of Devin Singh - Expert in full-stack development, DevOps, and cloud architecture with 10+ years of experience.",
-    images: ["https://devinops.com/og-image-professional.jpg"],
+    images: ["https://devinops.me/og-image-professional.jpg"],
   },
 }
 

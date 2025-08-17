@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://devinops.com/sitemap.xml',
+    sitemap: 'https://devinops.me/sitemap.xml',
   }
 } 

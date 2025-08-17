@@ -23,11 +23,11 @@ export function SeoEnhancer() {
         "@type": "ProfilePage",
         "mainEntity": {
           "@type": "Person",
-          "@id": "https://devinops.com/#devin-singh-professional",
+          "@id": "https://devinops.me/#devin-singh-professional",
           "name": "Devin Singh",
           "jobTitle": "Full-Stack Engineer & DevOps Specialist",
           "description": "Software engineer with 10+ years of experience in full-stack development and DevOps, specializing in cloud architecture and scalable solutions.",
-          "url": "https://devinops.com",
+          "url": "https://devinops.me",
           "sameAs": [
             "https://linkedin.com/in/devin",
             "https://github.com/devin"
@@ -41,38 +41,38 @@ export function SeoEnhancer() {
         "mainContentOfPage": {
           "@type": "WebPageElement",
           "isPartOf": {
-            "@id": "https://devinops.com/#devin-singh-professional"
+            "@id": "https://devinops.me/#devin-singh-professional"
           },
           "hasPart": [
             {
               "@type": "WebPageElement",
               "name": "About",
               "description": "About Devin Singh, Full-Stack Engineer and DevOps Specialist",
-              "url": "https://devinops.com/#about-professional"
+              "url": "https://devinops.me/#about-professional"
             },
             {
               "@type": "WebPageElement",
               "name": "Skills",
               "description": "Technical skills of Devin Singh including frontend, backend, DevOps, and cloud technologies",
-              "url": "https://devinops.com/#skills-professional"
+              "url": "https://devinops.me/#skills-professional"
             },
             {
               "@type": "WebPageElement",
               "name": "Projects",
               "description": "Software engineering projects by Devin Singh showcasing full-stack and DevOps expertise",
-              "url": "https://devinops.com/#projects-professional"
+              "url": "https://devinops.me/#projects-professional"
             },
             {
               "@type": "WebPageElement",
               "name": "Resume",
               "description": "Professional resume of Devin Singh with work experience and qualifications",
-              "url": "https://devinops.com/#resume-professional"
+              "url": "https://devinops.me/#resume-professional"
             },
             {
               "@type": "WebPageElement",
               "name": "Contact",
               "description": "Contact information for Devin Singh",
-              "url": "https://devinops.com/#contact-professional"
+              "url": "https://devinops.me/#contact-professional"
             }
           ]
         }
@@ -84,11 +84,11 @@ export function SeoEnhancer() {
         "@type": "ProfilePage",
         "mainEntity": {
           "@type": "Person",
-          "@id": "https://devinops.com/#devin-singh-terminal",
+          "@id": "https://devinops.me/#devin-singh-terminal",
           "name": "Devin Singh",
           "jobTitle": "Full-Stack Engineer & DevOps Specialist",
           "description": "Software engineer with 10+ years of experience in full-stack development and DevOps, specializing in cloud architecture and scalable solutions.",
-          "url": "https://devinops.com",
+          "url": "https://devinops.me",
           "sameAs": [
             "https://linkedin.com/in/devin",
             "https://github.com/devin"
@@ -120,38 +120,38 @@ export function SeoEnhancer() {
         "mainContentOfPage": {
           "@type": "WebPageElement",
           "isPartOf": {
-            "@id": "https://devinops.com/#devin-singh-terminal"
+            "@id": "https://devinops.me/#devin-singh-terminal"
           },
           "hasPart": [
             {
               "@type": "WebPageElement",
               "name": "Hero",
               "description": "Terminal-style introduction to Devin Singh, Full-Stack Engineer and DevOps Specialist",
-              "url": "https://devinops.com/#hero"
+              "url": "https://devinops.me/#hero"
             },
             {
               "@type": "WebPageElement",
               "name": "About",
               "description": "About Devin Singh's background and expertise in software engineering and DevOps",
-              "url": "https://devinops.com/#about"
+              "url": "https://devinops.me/#about"
             },
             {
               "@type": "WebPageElement",
               "name": "Skills",
               "description": "Technical skills of Devin Singh presented in a terminal-style interface",
-              "url": "https://devinops.com/#skills"
+              "url": "https://devinops.me/#skills"
             },
             {
               "@type": "WebPageElement",
               "name": "Projects",
               "description": "Software engineering projects by Devin Singh showcased in terminal windows",
-              "url": "https://devinops.com/#projects"
+              "url": "https://devinops.me/#projects"
             },
             {
               "@type": "WebPageElement",
               "name": "Contact",
               "description": "Contact information for Devin Singh with terminal-style form",
-              "url": "https://devinops.com/#contact"
+              "url": "https://devinops.me/#contact"
             }
           ]
         },

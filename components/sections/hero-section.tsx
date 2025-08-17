@@ -189,7 +189,7 @@ export function HeroSection() {
       {/* Primary schema.org data for Devin Singh */}
       <meta itemProp="name" content="Devin Singh" />
       <meta itemProp="alternateName" content="DevinOps" />
-      <meta itemProp="url" content="https://devinops.com" />
+      <meta itemProp="url" content="https://devinops.me" />
       <meta itemProp="jobTitle" content="Full-Stack Engineer & DevOps Specialist" />
       <meta itemProp="description" content="Software engineer with 10+ years of experience in full-stack development and DevOps, specializing in cloud architecture and scalable solutions." />
       <meta itemProp="knowsAbout" content="Full-Stack Development, DevOps Engineering, Cloud Architecture, Kubernetes, React, Node.js" />

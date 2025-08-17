@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
         <p><strong>Message:</strong></p>
         <p>${message.replace(/\n/g, '<br>')}</p>
         <hr>
-        <p><em>This message was sent from the contact form on devinops.com</em></p>
+        <p><em>This message was sent from the contact form on devinops.me</em></p>
       `,
       text: `
         New Contact Form Submission
@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
         ${subject ? `Subject: ${subject}` : ''}
         Message: ${message}
         
-        This message was sent from the contact form on devinops.com
+        This message was sent from the contact form on devinops.me
       `,
     }
 
@@ -216,8 +216,8 @@ export async function POST(request: NextRequest) {
                 <div>total 3</div>
                 <div>drwxr-xr-x  3 devin staff  96 Jan  9 03:16 <span class="accent">.</span></div>
                 <div>drwxr-xr-x  8 devin staff 256 Jan  9 03:16 <span class="accent">..</span></div>
-                <div>-rw-r--r--  1 devin staff 1.2K Jan  9 03:16 <a href="https://devinops.com">main_portfolio.link</a></div>
-                <div>-rw-r--r--  1 devin staff 2.1K Jan  9 03:16 <a href="https://devinops.com/pro">professional_mode.link</a></div>
+                <div>-rw-r--r--  1 devin staff 1.2K Jan  9 03:16 <a href="https://devinops.me">main_portfolio.link</a></div>
+                <div>-rw-r--r--  1 devin staff 2.1K Jan  9 03:16 <a href="https://devinops.me/pro">professional_mode.link</a></div>
                 <div>-rw-r--r--  1 devin staff 856B Jan  9 03:16 <a href="https://github.com/devints47">github_profile.link</a></div>
                 <div>-rw-r--r--  1 devin staff 1.5K Jan  9 03:16 <a href="/Devin_Singh_Resume.pdf">resume.pdf</a></div>
               </div>
@@ -285,8 +285,8 @@ $ ls -la ~/devinops/resources/
 total 3
 drwxr-xr-x  3 devin staff  96 Jan  9 03:16 .
 drwxr-xr-x  8 devin staff 256 Jan  9 03:16 ..
--rw-r--r--  1 devin staff 1.2K Jan  9 03:16 main_portfolio.link → https://devinops.com
--rw-r--r--  1 devin staff 2.1K Jan  9 03:16 professional_mode.link → https://devinops.com/pro
+-rw-r--r--  1 devin staff 1.2K Jan  9 03:16 main_portfolio.link → https://devinops.me
+-rw-r--r--  1 devin staff 2.1K Jan  9 03:16 professional_mode.link → https://devinops.me/pro
 -rw-r--r--  1 devin staff 856B Jan  9 03:16 github_profile.link → https://github.com/devints47
 -rw-r--r--  1 devin staff 1.5K Jan  9 03:16 resume.pdf → /Devin_Singh_Resume.pdf
 
