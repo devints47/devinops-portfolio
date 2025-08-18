@@ -90,6 +90,14 @@ export function ResumeProfessionalSection() {
       <meta itemProp="name" content="Devin Singh's Professional Resume" />
       <meta itemProp="description" content="Professional resume of Devin Singh, Full-Stack Engineer and DevOps Specialist with 10+ years of experience" />
       
+      {/* Main Entity for ProfilePage */}
+      <div itemProp="mainEntity" itemScope itemType="https://schema.org/Person" className="sr-only">
+        <meta itemProp="name" content="Devin Singh" />
+        <meta itemProp="jobTitle" content="Full-Stack Engineer & DevOps Specialist" />
+        <meta itemProp="url" content="https://devinops.me" />
+        <meta itemProp="email" content="hello@devinops.com" />
+      </div>
+      
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="professional-heading text-4xl font-bold mb-4 text-professional-slate-200">

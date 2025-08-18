@@ -82,6 +82,14 @@ export function ResumeSection() {
       <meta itemProp="name" content="Devin Singh's Professional Resume" />
       <meta itemProp="description" content="Professional resume of Devin Singh, Full-Stack Software Engineer and DevOps Specialist at DevinOps with 10+ years of experience" />
       
+      {/* Main Entity for ProfilePage */}
+      <div itemProp="mainEntity" itemScope itemType="https://schema.org/Person" className="sr-only">
+        <meta itemProp="name" content="Devin Singh" />
+        <meta itemProp="jobTitle" content="Full-Stack Engineer & DevOps Specialist" />
+        <meta itemProp="url" content="https://devinops.me" />
+        <meta itemProp="email" content="hello@devinops.com" />
+      </div>
+      
       <FloatingCodeSnippet
         code={`// devin-singh-experience.yaml
 - company: Cole Engineering Services, Inc.
