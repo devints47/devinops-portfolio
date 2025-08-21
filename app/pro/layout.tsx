@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "Professional portfolio of Devin Singh - 10+ years building, deploying, and scaling digital solutions. Expert in full-stack development, DevOps, and cloud architecture.",
   keywords: ["Devin Singh professional", "DevinOps professional", "software engineer portfolio", "full stack developer", "DevOps specialist portfolio", "web developer resume"],
   alternates: {
-    canonical: "/pro",
+    canonical: "https://devinops.me/pro",
   },
   openGraph: {
     title: "Professional Portfolio - Devin Singh | Full-Stack Engineer & DevOps Specialist",

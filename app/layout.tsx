@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://devinops.me"),
   alternates: {
-    canonical: "/",
+    canonical: "https://devinops.me/",
   },
   robots: {
     index: true,
